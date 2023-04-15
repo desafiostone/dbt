@@ -2,7 +2,7 @@ SELECT
 base.codigo_da_transacao,
 base.data_e_hora_da_transacao_br,
 mc.id AS id_metodo_de_captura,
-bc.id AS id_bandeira_do_cartao,
+COALESCE(bc.id,-1) AS id_bandeira_do_cartao,
 mp.id AS id_metodo_de_pagamento,
 et.id AS id_estado_da_transacao,
 base.valor_da_transacao,

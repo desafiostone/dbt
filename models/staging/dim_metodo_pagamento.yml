@@ -17,6 +17,6 @@ models:
       - name: metodo_de_pagamento
         description: Método de pagamento
       - name: nome_amigavel
-        description: Nome amigável do estado. Se disponível, em português
+        description: Nome amigável do método de pagamento. Se disponível, em português
       - name: descricao
         description: Descrição do método de pagamento

@@ -1,5 +1,6 @@
 {%- macro gera_fonte(fonte, tabela) -%}
 
+
 SELECT
 codigo_da_transacao,
 DATETIME(data_e_hora_da_transacao,"America/Sao_Paulo") AS data_e_hora_da_transacao_br,

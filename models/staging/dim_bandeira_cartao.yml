@@ -17,4 +17,4 @@ models:
       - name: bandeira_do_cartao
         description: Bandeira do cartão
       - name: descricao
-        description: Descricao do cartão
+        description: Descrição do cartão

@@ -6,4 +6,4 @@
     {{ gera_fonte(fonte, tabela)}}
     {{ "UNION ALL" if not loop.last}}
 
-{%- endfor -%}
+{% endfor %}

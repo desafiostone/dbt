@@ -1,0 +1,9 @@
+marlon:
+    target: dev
+    outputs:
+        dev:
+            type: bigquery
+            project: desafio-analytics-383414
+            dataset: desafio
+            method: oauth
+            threads: 6

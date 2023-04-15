@@ -1,0 +1,20 @@
+---
+version: 2
+
+models:
+  - name: dim_metodo_captura
+    description: Tabela dimensão método de captura
+    config:
+      tags:
+        - dim
+
+      persist_docs: {relation: true, columns: true}
+      materialized: table
+
+    columns:
+      - name: id
+        description: Id único do método de captura
+      - name: metodo_de_captura
+        description: Dispositivo de captura (POS, Tapton ou Link de pagamento)
+      - name: descricao
+        description: Descrição do método de captura

@@ -1,0 +1,20 @@
+---
+version: 2
+
+models:
+  - name: dim_bandeira_cartao
+    description: Tabela dimensão bandeira do cartão
+    config:
+      tags:
+        - dim
+
+      persist_docs: {relation: true, columns: true}
+      materialized: table
+
+    columns:
+      - name: id
+        description: Id único da bandeira do cartão
+      - name: bandeira_do_cartao
+        description: Bandeira do cartão
+      - name: descricao
+        description: Descricao do cartão

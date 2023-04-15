@@ -1,0 +1,22 @@
+---
+version: 2
+
+models:
+  - name: dim_cidade_usuario
+    description: Tabela dimensão cidade do usuário
+    config:
+      tags:
+        - dim
+
+      persist_docs: {relation: true, columns: true}
+      materialized: table
+
+    columns:
+      - name: id
+        description: Id único da combinação cidade e estado (Hash)
+      - name: cidade_do_usuario
+        description: Cidade do usuário
+      - name: estado_do_usuario
+        description: Estado do usuário
+      - name: regiao
+        description: Região geográfica do usuário

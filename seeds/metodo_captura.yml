@@ -1,0 +1,27 @@
+version: 2
+
+seeds:
+  - name: metodo_captura
+    description: |
+      Lista de métodos de captura e suas descrições
+    config:
+      enabled: true
+
+      schema: seed
+      database: desafio-analytics-383414
+
+      persist_docs:
+        relation: true
+        columns: true
+
+      full_refresh: true
+      column_types:
+        metodo_de_captura: string
+        descricao: string
+
+
+    columns:
+        - name: metodo_de_captura
+          description: Identificação do método de captura da transação
+        - name: descricao
+          description: Descrição do método de captura

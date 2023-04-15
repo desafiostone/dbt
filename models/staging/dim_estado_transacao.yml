@@ -1,0 +1,22 @@
+---
+version: 2
+
+models:
+  - name: dim_estado_transacao
+    description: Tabela dimensão estado da transação
+    config:
+      tags:
+        - dim
+
+      persist_docs: {relation: true, columns: true}
+      materialized: table
+
+    columns:
+      - name: id
+        description: Id único do estado da transação
+      - name: estado_da_transacao
+        description: Estado da transação (valores aceitos = paid, refused, refunded e chargedback)
+      - name: nome_amigavel
+        description: Nome amigável do estado. Se disponível, em português
+      - name: descricao
+        description: Descrição do estado da transação

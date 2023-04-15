@@ -1,0 +1,5 @@
+estado_da_transacao,nome_amigavel,descricao
+REFUSED,Recusado,"Pagamento foi recusado. Pode acontecer por motivo de tempo excedido, indisponibilidade ou saldo insuficiente"
+PAID,Pago,"O pagamento foi feito corretamente"
+REFUNDED,Reembolsado,"O pagamento foi reembolsado ao cliente"
+CHARGEDBACK,Contestado,"O pagamento foi contestado pelo cliente. Pode acontecer por motivos de fraude deliberada, desacordo comercial, autofraude, fraude amigável ou mesmo erro de processamento"

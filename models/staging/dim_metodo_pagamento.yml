@@ -1,0 +1,22 @@
+---
+version: 2
+
+models:
+  - name: dim_metodo_pagamento
+    description: Tabela dimensão método de pagamento
+    config:
+      tags:
+        - dim
+
+      persist_docs: {relation: true, columns: true}
+      materialized: table
+
+    columns:
+      - name: id
+        description: Id único do método de pagamento
+      - name: metodo_de_pagamento
+        description: Método de pagamento
+      - name: nome_amigavel
+        description: Nome amigável do estado. Se disponível, em português
+      - name: descricao
+        description: Descrição do método de pagamento

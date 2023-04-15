@@ -1,0 +1,4 @@
+﻿metodo_de_captura,descricao
+POS,Point of Sale. Maquininha de cartão portátil atrelada a uma adquirente
+TAP,Método de captura através de celular por meio da tecnologia de NFC
+LINK,Venda através de Link de Pagamento gerado por meio do aplicativo Stone

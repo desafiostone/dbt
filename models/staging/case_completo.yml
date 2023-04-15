@@ -1,0 +1,62 @@
+---
+version: 2
+
+models:
+  - name: case_completo
+    description: Tabela conjunta dos dois arquivos fontes do case técnico
+    config:
+      tags:
+        - fonte
+
+      persist_docs: {relation: true, columns: true}
+      partition_by: { "field": "data_e_hora_da_transacao_br", "data_type": "timestamp", "granularity": "day" }
+      materialized: table
+
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - codigo_da_transacao
+            - codigo_do_usuario
+      
+
+    columns:
+      - name: codigo_da_transacao
+        description: Código único da transação
+
+      - name: data_e_hora_da_transacao_br
+        description: Data e hora da transação (UTC -3)
+
+      - name: metodo_de_captura
+        description: Dispositivo de captura (POS, Tapton ou Link de pagamento)
+        tests:
+          - not_null
+
+      - name: bandeira_do_cartao
+        description: Bandeira do cartão
+
+      - name: metodo_de_pagamento
+        description: Método de pagamento
+        tests:
+          - not_null
+
+      - name: estado_da_transacao
+        description: Estado da transação (valores aceitos = paid, refused, refunded e chargedback)
+        tests:
+          - accepted_values:
+              values: ['PAID', 'REFUSED', 'REFUNDED', 'CHARGEDBACK']
+
+      - name: valor_da_transacao
+        description: Valor da transação (R$)
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: '>= 0'
+
+      - name: codigo_do_usuario
+        description: Código único do usuário
+
+      - name: estado_do_usuario
+        description: Estado do usuário
+        
+      - name: cidade_do_usuario
+        description: Cidade do usuário

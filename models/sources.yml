@@ -1,0 +1,10 @@
+---
+version: 2
+
+sources:
+    - name: raw_data
+      schema: raw_data
+      database: desafio-analytics-383414
+      tables:
+          - name: case_parte1
+          - name: case_parte2

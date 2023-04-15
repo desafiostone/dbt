@@ -1,0 +1,32 @@
+version: 2
+
+seeds:
+  - name: estados
+    description: |
+      Lista de estados, com sigla, nome por extenso, região geográfica e número de municípios
+    config:
+      enabled: true
+
+      schema: seed
+      database: desafio-analytics-383414
+
+      persist_docs:
+        relation: true
+        columns: true
+
+      full_refresh: true
+      column_types:
+        uf: string
+        nome: string
+        regiao: string
+        qnt_municipio: INT64
+
+    columns:
+        - name: uf
+          description: Unidade Federativa, sigla do estado ou distrito federal
+        - name: nome
+          description: Nome por extenso do estado ou distrito federal
+        - name: regiao
+          description: Região geográfica a qual a UF pertence
+        - name: qnt_municipio
+          description: Quantidade de municípios na UF

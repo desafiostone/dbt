@@ -1,0 +1,28 @@
+uf,nome,regiao,qnt_municipio
+RO,Rondônia,Região Norte,52
+AC,Acre,Região Norte,22
+AM,Amazonas,Região Norte,62
+RR,Roraima,Região Norte,15
+PA,Pará,Região Norte,144
+AP,Amapá,Região Norte,16
+TO,Tocantins,Região Norte,139
+MA,Maranhão,Região Nordeste,217
+PI,Piauí,Região Nordeste,224
+CE,Ceará,Região Nordeste,184
+RN,Rio Grande do Norte,Região Nordeste,167
+PB,Paraíba,Região Nordeste,223
+PE,Pernambuco,Região Nordeste,185
+AL,Alagoas,Região Nordeste,102
+SE,Sergipe,Região Nordeste,75
+BA,Bahia,Região Nordeste,417
+MG,Minas Gerais,Região Sudeste,853
+ES,Espírito Santo,Região Sudeste,78
+RJ,Rio de Janeiro,Região Sudeste,92
+SP,São Paulo,Região Sudeste,645
+PR,Paraná,Região Sul,399
+SC,Santa Catarina,Região Sul,295
+RS,Rio Grande do Sul,Região Sul,497
+MS,Mato Grosso do Sul,Região Centro-Oeste,79
+MT,Mato Grosso,Região Centro-Oeste,141
+GO,Goiás,Região Centro-Oeste,246
+DF,Distrito Federal,Região Centro-Oeste,1

@@ -1,0 +1,59 @@
+---
+version: 2
+
+models:
+  - name: fct_transacoes
+    description: Tabela fato de transações
+    config:
+      tags:
+        - fato
+
+      persist_docs: {relation: true, columns: true}
+      partition_by: { "field": "data_e_hora_da_transacao_br", "data_type": "timestamp", "granularity": "day" }
+      materialized: table
+
+    columns:
+      - name: codigo_da_transacao
+        description: Código único da transação
+        tests:
+          - not_null
+
+      - name: data_e_hora_da_transacao_br
+        description: Data e hora da transação (UTC -3)
+        tests:
+          - not_null
+
+      - name: id_metodo_de_captura
+        description: Chave estrangeira para se ligar à dimensão método de captura
+        tests:
+          - not_null
+
+      - name: id_bandeira_do_cartao
+        description: Chave estrangeira para se ligar à dimensão bandeira do cartão
+        tests:
+          - not_null
+
+      - name: id_metodo_de_pagamento
+        description: Chave estrangeira para se ligar à dimensão  método de pagamento
+        tests:
+          - not_null
+
+      - name: id_estado_da_transacao
+        description: Chave estrangeira para se ligar à dimensão estado da transação
+        tests:
+          - not_null
+
+      - name: valor_da_transacao
+        description: Valor da transação (R$)
+        tests:
+          - not_null
+
+      - name: codigo_do_usuario
+        description: Código único do usuário
+        tests:
+          - not_null
+
+      - name: id_cidade_do_usuario
+        description: Chave estrangeira para se ligar à dimensão cidade do usuário
+        tests:
+          - not_null      

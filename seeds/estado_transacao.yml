@@ -6,6 +6,8 @@ seeds:
       Lista de estados de transações, suas traduções e descrições
     config:
       enabled: true
+      tags:
+        - seed
 
       schema: seed
       database: desafio-analytics-383414

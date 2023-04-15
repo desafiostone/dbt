@@ -17,6 +17,7 @@ models:
           combination_of_columns:
             - codigo_da_transacao
             - codigo_do_usuario
+            - data_e_hora_da_transacao_br
       
 
     columns:

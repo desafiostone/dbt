@@ -1,0 +1,17 @@
+version: 2
+
+macros:
+  - name: gera_fonte
+    description: |
+        Macro para gerar uma fonte sanitizada a partir de tabelas raw. 
+        Específico para as tabelas do desafio stone.
+    arguments:
+      - name: dataset
+        type: string
+        description: O dataset onde se encontram as tabelas fonte.
+      - name: tabela
+        type: string
+        description: |
+            Nome da tabela onde se encontra a fonte.
+            Caso haja mais de uma tabela, é recomendado usar o comando set do jinja junto com um fluxo for para
+            chama-las uma por vez

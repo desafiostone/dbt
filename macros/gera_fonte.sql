@@ -1,4 +1,4 @@
-{%- macro gera_fonte(fonte, tabela) -%}
+{%- macro gera_fonte(dataset, tabela) -%}
 
 
 SELECT
@@ -21,7 +21,7 @@ ELSE
     INITCAP(TRIM(REPLACE(cidade_do_usuario,"'"," "),' ,')) 
 END AS cidade_do_usuario
 
-FROM {{ source(fonte,tabela) }} 
+FROM {{ source(dataset,tabela) }} 
 WHERE UPPER(estado_da_transacao) IN ("PAID", "REFUSED", "REFUNDED", "CHARGEDBACK")
 AND UPPER(estado_do_usuario) IN (SELECT DISTINCT uf FROM {{ ref("estados")}})
 

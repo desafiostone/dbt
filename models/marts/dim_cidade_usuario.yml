@@ -20,3 +20,5 @@ models:
         description: Estado do usuário
       - name: regiao
         description: Região geográfica do usuário
+      - name: nome
+        description: Nome por extenso do estado ou distrito federal

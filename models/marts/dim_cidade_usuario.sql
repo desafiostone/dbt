@@ -2,6 +2,7 @@ SELECT
 DISTINCT
 f.cidade_do_usuario,
 f.estado_do_usuario,
+e.nome,
 e.regiao,
 {{ dbt_utils.generate_surrogate_key(['f.cidade_do_usuario', 'f.estado_do_usuario']) }} AS id
 

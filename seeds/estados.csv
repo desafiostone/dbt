@@ -1,28 +1,28 @@
 uf,nome,regiao,qnt_municipio
-RO,Rondônia,Região Norte,52
-AC,Acre,Região Norte,22
-AM,Amazonas,Região Norte,62
-RR,Roraima,Região Norte,15
-PA,Para,Região Norte,144
-AP,Amapa,Região Norte,16
-TO,Tocantins,Região Norte,139
-MA,Maranhão,Região Nordeste,217
-PI,Piaui,Região Nordeste,224
-CE,Ceara,Região Nordeste,184
-RN,Rio Grande do Norte,Região Nordeste,167
-PB,Paraiba,Região Nordeste,223
-PE,Pernambuco,Região Nordeste,185
-AL,Alagoas,Região Nordeste,102
-SE,Sergipe,Região Nordeste,75
-BA,Bahia,Região Nordeste,417
-MG,Minas Gerais,Região Sudeste,853
-ES,Espirito Santo,Região Sudeste,78
-RJ,Rio de Janeiro,Região Sudeste,92
-SP,São Paulo,Região Sudeste,645
-PR,Parana,Região Sul,399
-SC,Santa Catarina,Região Sul,295
-RS,Rio Grande do Sul,Região Sul,497
-MS,Mato Grosso do Sul,Região Centro-Oeste,79
-MT,Mato Grosso,Região Centro-Oeste,141
-GO,Goias,Região Centro-Oeste,246
-DF,Distrito Federal,Região Centro-Oeste,1
+RO,Rondonia,Regiao Norte,52
+AC,Acre,Regiao Norte,22
+AM,Amazonas,Regiao Norte,62
+RR,Roraima,Regiao Norte,15
+PA,Para,Regiao Norte,144
+AP,Amapa,Regiao Norte,16
+TO,Tocantins,Regiao Norte,139
+MA,Maranhao,Regiao Nordeste,217
+PI,Piaui,Regiao Nordeste,224
+CE,Ceara,Regiao Nordeste,184
+RN,Rio Grande do Norte,Regiao Nordeste,167
+PB,Paraiba,Regiao Nordeste,223
+PE,Pernambuco,Regiao Nordeste,185
+AL,Alagoas,Regiao Nordeste,102
+SE,Sergipe,Regiao Nordeste,75
+BA,Bahia,Regiao Nordeste,417
+MG,Minas Gerais,Regiao Sudeste,853
+ES,Espirito Santo,Regiao Sudeste,78
+RJ,Rio de Janeiro,Regiao Sudeste,92
+SP,Sao Paulo,Regiao Sudeste,645
+PR,Parana,Regiao Sul,399
+SC,Santa Catarina,Regiao Sul,295
+RS,Rio Grande do Sul,Regiao Sul,497
+MS,Mato Grosso do Sul,Regiao Centro-Oeste,79
+MT,Mato Grosso,Regiao Centro-Oeste,141
+GO,Goias,Regiao Centro-Oeste,246
+DF,Distrito Federal,Regiao Centro-Oeste,1
